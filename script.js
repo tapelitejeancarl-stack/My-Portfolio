@@ -1,6 +1,8 @@
 /* ============ Settings (edit these) ============ */
 const GITHUB_USER = "tapelitejeancarl-stack";
 const PROJECTS_FILE = "projects.json";
+/* Repos you do NOT want shown as project cards (repo names, any case) */
+const HIDDEN_REPOS = ["tapelitejeancarl-stack.github.io"];
 
 /* ============ Helpers ============ */
 const $ = (sel, root = document) => root.querySelector(sel);
@@ -229,7 +231,8 @@ Promise.all([manualProjects, githubRepos]).then(([manual, repos]) => {
   /* Projects: projects.json first, then every other public repo */
   const known = new Set(manual.map(p => normUrl(p.repo)));
   const auto = (repos || [])
-    .filter(r => !r.fork && !known.has(normUrl(r.html_url)))
+    .filter(r => !r.fork && !known.has(normUrl(r.html_url)) &&
+      !HIDDEN_REPOS.some(h => h.toLowerCase() === r.name.toLowerCase()))
     .map(repoToProject);
   const all = manual.concat(auto);
 

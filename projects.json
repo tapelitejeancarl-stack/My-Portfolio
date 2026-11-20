@@ -1,8 +1,5 @@
 [
   {
-   
-  },
-  {
     "id": "login-page",
     "title": "Login Page",
     "tagline": "A clean login form with a show/hide password button.",
@@ -15,7 +12,11 @@
       "Remember me and forgot password options",
       "Works on phone screens"
     ],
-    "tech": ["HTML", "CSS", "JavaScript"],
+    "tech": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "repo": "https://github.com/tapelitejeancarl-stack/tapelitejeancarlloginpage.github.io"
   },
   {
@@ -31,7 +32,10 @@
       "Photo and video galleries using CSS grid",
       "Contact information section"
     ],
-    "tech": ["HTML", "CSS"],
+    "tech": [
+      "HTML",
+      "CSS"
+    ],
     "repo": "https://github.com/tapelitejeancarl-stack/portfoliowebapge.github.io"
   }
 ]

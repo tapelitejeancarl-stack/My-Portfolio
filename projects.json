@@ -1,20 +1,6 @@
 [
   {
-    "id": "portfolio-website",
-    "title": "Personal Portfolio Website",
-    "tagline": "My internship portfolio, built from scratch.",
-    "icon": "</>",
-    "color": "#2f6df6",
-    "description": "A responsive one-page portfolio that introduces me, lists my skills and shows my projects. It has a light and dark theme, a mobile menu and a contact form with validation.",
-    "features": [
-      "Responsive layout for phone, tablet and laptop",
-      "Light and dark theme that remembers your choice",
-      "Projects loaded from a JSON file",
-      "Latest repositories loaded from the GitHub API"
-    ],
-    "tech": ["HTML", "CSS", "JavaScript", "JSON", "GitHub Pages"],
-    "repo": "https://github.com/tapelitejeancarl-stack/tapelitejeancarl-stack.github.io",
-    "demo": "https://tapelitejeancarl-stack.github.io"
+   
   },
   {
     "id": "login-page",
